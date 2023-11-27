@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Weather Now</title>
+
+
+    <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="center-div">
+        <h1 class="weather-header">Weather Now: Get Weather Now</h1>
+    </div>
+    <div class="center-div">
+        <div class="weather-card">
+            <h3 class="text-area">Search by City</h3>
+            <form>
+                <input type="text" name="search-info" id="city-input">
+                <button onclick="loadData(event)">Submit</button>
+            </form>
+        
+            <p class="text-area" id ="data-dump"></p>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
